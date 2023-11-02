@@ -63,7 +63,11 @@
     <!-- Spinner End -->
 
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid position-relative p-0" style="height: 930px">
+    <div
+      class="container-fluid position-relative p-0"
+      style="height: 930px"
+      id="home"
+    >
       <nav
         class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
       >
@@ -84,28 +88,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#service" class="nav-item nav-link">Services</a>
             <a href="package.html" class="nav-item nav-link">Packages</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu m-0">
-                <a href="destination.html" class="dropdown-item">Destination</a>
-                <a href="booking.html" class="dropdown-item">Booking</a>
-                <a href="team.html" class="dropdown-item">Travel Guides</a>
-                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                <a href="404.html" class="dropdown-item">404 Page</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
-          <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+          <a href="" class="btn btn-primary rounded-pill py-2 px-4">Sign in</a>
         </div>
       </nav>
 
@@ -140,7 +129,7 @@
     <!-- Navbar & Hero End -->
 
     <!-- About Start -->
-    <div class="container-xxl py-5" style="height: 645px">
+    <div class="container-xxl py-5" style="height: 645px" id="about">
       <div class="container">
         <div class="row g-5">
           <div
@@ -174,7 +163,9 @@
               lorem sit clita duo justo magna dolore erat amet
             </p>
 
-            <a class="btn btn-primary py-3 px-5 mt-2" href="">Contact Us</a>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="#contact"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
@@ -182,7 +173,7 @@
     <!-- About End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5" style="height: 530px">
+    <div class="container-xxl py-5" style="height: 530px" id="service">
       <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 class="section-title bg-white text-center text-primary px-3">
@@ -315,7 +306,7 @@
     <!-- Testimonial End -->
 
     <!-- Contact Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="contact">
       <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 class="section-title bg-white text-center text-primary px-3">

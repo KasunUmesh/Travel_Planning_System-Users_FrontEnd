@@ -1,803 +1,1054 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Pacific - Free Bootstrap 4 Template by Colorlib</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <title>Next Travel Pvt Ltd</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-	<link rel="stylesheet" href="assets/css/animate.css">
-	
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="assets/css/jquery.timepicker.css">
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-	
-	<link rel="stylesheet" href="assets/css/flaticon.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Pacific<span>Travel Agency</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-					<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
-	
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_5.jpg');">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-				<div class="col-md-7 ftco-animate">
-					<span class="subheading">Welcome to Pacific</span>
-					<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
-					<p class="caps">Travel to the any corner of the world, without going around in circles</p>
-				</div>
-				<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
-					<span class="fa fa-play"></span>
-				</a>
-			</div>
-		</div>
-	</div>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-	<section class="ftco-section ftco-no-pb ftco-no-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="ftco-search d-flex justify-content-center">
-						<div class="row">
-							<div class="col-md-12 nav-link-wrap">
-								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-									<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Search Tour</a>
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-									<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Hotel</a>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
 
-								</div>
-							</div>
-							<div class="col-md-12 tab-wrap">
-								
-								<div class="tab-content" id="v-pills-tabContent">
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0" style="height: 930px">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <h1 class="text-primary m-0">
+            <i class="fa fa-plane me-3" aria-hidden="true"></i>Next Travel Pvt
+            Ltd
+          </h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="package.html" class="nav-item nav-link">Packages</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="destination.html" class="dropdown-item">Destination</a>
+                <a href="booking.html" class="dropdown-item">Booking</a>
+                <a href="team.html" class="dropdown-item">Travel Guides</a>
+                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                <a href="404.html" class="dropdown-item">404 Page</a>
+              </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+        </div>
+      </nav>
 
-									<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-										<form action="#" class="search-property-1">
-											<div class="row no-gutters">
-												<div class="col-md d-flex">
-													<div class="form-group p-4 border-0">
-														<label for="#">Destination</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-search"></span></div>
-															<input type="text" class="form-control" placeholder="Search place">
-														</div>
-													</div>
-												</div>
-												<div class="col-md d-flex">
-													<div class="form-group p-4">
-														<label for="#">Check-in date</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
-															<input type="text" class="form-control checkin_date" placeholder="Check In Date">
-														</div>
-													</div>
-												</div>
-												<div class="col-md d-flex">
-													<div class="form-group p-4">
-														<label for="#">Check-out date</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
-															<input type="text" class="form-control checkout_date" placeholder="Check Out Date">
-														</div>
-													</div>
-												</div>
-												<div class="col-md d-flex">
-													<div class="form-group p-4">
-														<label for="#">Price Limit</label>
-														<div class="form-field">
-															<div class="select-wrap">
-																<div class="icon"><span class="fa fa-chevron-down"></span></div>
-																<select name="" id="" class="form-control">
-																	<option value="">$100</option>
-																	<option value="">$10,000</option>
-																	<option value="">$50,000</option>
-																	<option value="">$100,000</option>
-																	<option value="">$200,000</option>
-																	<option value="">$300,000</option>
-																	<option value="">$400,000</option>
-																	<option value="">$500,000</option>
-																	<option value="">$600,000</option>
-																	<option value="">$700,000</option>
-																	<option value="">$800,000</option>
-																	<option value="">$900,000</option>
-																	<option value="">$1,000,000</option>
-																	<option value="">$2,000,000</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-md d-flex">
-													<div class="form-group d-flex w-100 border-0">
-														<div class="form-field w-100 align-items-center d-flex">
-															<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
-														</div>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
+      <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+          <div class="row justify-content-center py-5">
+            <div
+              class="col-lg-10 pt-lg-5 mt-lg-5 text-center"
+              style="position: relative; top: 100px"
+            >
+              <h1 class="display-3 text-white mb-3 animated slideInDown">
+                Enjoy Your Vacation With Us
+              </h1>
+              <p class="fs-4 text-white mb-4 animated slideInDown">
+                Tempor erat elitr rebum at clita diam amet diam et eos erat
+                ipsum lorem sit
+              </p>
+              <div class="position-relative w-75 mx-auto animated slideInDown">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill py-2 px-4 top-0 end-0 me-2"
+                  style="margin-top: 7px"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
 
-									<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-										<form action="#" class="search-property-1">
-											<div class="row no-gutters">
-												<div class="col-lg d-flex">
-													<div class="form-group p-4 border-0">
-														<label for="#">Destination</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-search"></span></div>
-															<input type="text" class="form-control" placeholder="Search place">
-														</div>
-													</div>
-												</div>
-												<div class="col-lg d-flex">
-													<div class="form-group p-4">
-														<label for="#">Check-in date</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
-															<input type="text" class="form-control checkin_date" placeholder="Check In Date">
-														</div>
-													</div>
-												</div>
-												<div class="col-lg d-flex">
-													<div class="form-group p-4">
-														<label for="#">Check-out date</label>
-														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
-															<input type="text" class="form-control checkout_date" placeholder="Check Out Date">
-														</div>
-													</div>
-												</div>
-												<div class="col-lg d-flex">
-													<div class="form-group p-4">
-														<label for="#">Price Limit</label>
-														<div class="form-field">
-															<div class="select-wrap">
-																<div class="icon"><span class="fa fa-chevron-down"></span></div>
-																<select name="" id="" class="form-control">
-																	<option value="">$100</option>
-																	<option value="">$10,000</option>
-																	<option value="">$50,000</option>
-																	<option value="">$100,000</option>
-																	<option value="">$200,000</option>
-																	<option value="">$300,000</option>
-																	<option value="">$400,000</option>
-																	<option value="">$500,000</option>
-																	<option value="">$600,000</option>
-																	<option value="">$700,000</option>
-																	<option value="">$800,000</option>
-																	<option value="">$900,000</option>
-																	<option value="">$1,000,000</option>
-																	<option value="">$2,000,000</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg d-flex">
-													<div class="form-group d-flex w-100 border-0">
-														<div class="form-field w-100 align-items-center d-flex">
-															<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary p-0">
-														</div>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- About Start -->
+    <div class="container-xxl py-5" style="height: 590px">
+      <div class="container">
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative aboutImg">
+              <img
+                class="img-fluid position-absolute"
+                src="assets/images/about.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <h6 class="section-title bg-white text-start text-primary pe-3">
+              About Us
+            </h6>
+            <h1 class="mb-4">
+              Welcome to <span class="text-primary">Tourist</span>
+            </h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
 
-		<section class="ftco-section services-section">
-			<div class="container">
-				<div class="row d-flex">
-					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
-						<div class="w-100">
-							<span class="subheading">Welcome to Pacific</span>
-							<h2 class="mb-4">It's time to start your adventure</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-							A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							<p><a href="#" class="btn btn-primary py-3 px-4">Search Destination</a></p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-								<div class="services services-1 color-1 d-block img" style="background-image: url(images/services-1.jpg);">
-									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
-									<div class="media-body">
-										<h3 class="heading mb-3">Activities</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
-									</div>
-								</div>      
-							</div>
-							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-								<div class="services services-1 color-2 d-block img" style="background-image: url(images/services-2.jpg);">
-									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
-									<div class="media-body">
-										<h3 class="heading mb-3">Travel Arrangements</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
-									</div>
-								</div>    
-							</div>
-							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-								<div class="services services-1 color-3 d-block img" style="background-image: url(images/services-3.jpg);">
-									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
-									<div class="media-body">
-										<h3 class="heading mb-3">Private Guide</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
-									</div>
-								</div>      
-							</div>
-							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-								<div class="services services-1 color-4 d-block img" style="background-image: url(images/services-4.jpg);">
-									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
-									<div class="media-body">
-										<h3 class="heading mb-3">Location Manager</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary</p>
-									</div>
-								</div>      
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
 
-		<section class="ftco-section img ftco-select-destination" style="background-image: url(images/bg_3.jpg);">
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Pacific Provide Places</span>
-						<h2 class="mb-4">Select Your Destination</h2>
-					</div>
-				</div>
-			</div>
-			<div class="container container-2">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="carousel-destination owl-carousel ftco-animate">
-							<div class="item">
-								<div class="project-destination">
-									<a href="#" class="img" style="background-image: url(images/place-1.jpg);">
-										<div class="text">
-											<h3>Philippines</h3>
-											<span>8 Tours</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-									<a href="#" class="img" style="background-image: url(images/place-2.jpg);">
-										<div class="text">
-											<h3>Canada</h3>
-											<span>2 Tours</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-									<a href="#" class="img" style="background-image: url(images/place-3.jpg);">
-										<div class="text">
-											<h3>Thailand</h3>
-											<span>5 Tours</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-									<a href="#" class="img" style="background-image: url(images/place-4.jpg);">
-										<div class="text">
-											<h3>Autralia</h3>
-											<span>5 Tours</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-									<a href="#" class="img" style="background-image: url(images/place-5.jpg);">
-										<div class="text">
-											<h3>Greece</h3>
-											<span>7 Tours</span>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Services
+          </h6>
+          <h1 class="mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5>WorldWide Tours</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                <h5>Hotel Reservation</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                <h5>Travel Guides</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                <h5>Event Management</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5>WorldWide Tours</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                <h5>Hotel Reservation</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                <h5>Travel Guides</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                <h5>Event Management</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
 
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Destination</span>
-						<h2 class="mb-4">Tour Destination</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-1.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">8 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-mountains"></span>Near Mountain</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-2.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">10 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-3.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">7 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Destination
+          </h6>
+          <h1 class="mb-5">Popular Destination</h1>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="img/destination-1.jpg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    30% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Thailand
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="img/destination-2.jpg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    25% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Malaysia
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="">
+                  <img class="img-fluid" src="img/destination-3.jpg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    35% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Australia
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style="min-height: 350px"
+          >
+            <a class="position-relative d-block h-100 overflow-hidden" href="">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="img/destination-4.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+              <div
+                class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+              >
+                20% OFF
+              </div>
+              <div
+                class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+              >
+                Indonesia
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Destination Start -->
 
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-4.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">8 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-5.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">10 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 ftco-animate">
-						<div class="project-wrap">
-							<a href="#" class="img" style="background-image: url(images/destination-6.jpg);">
-								<span class="price">$550/person</span>
-							</a>
-							<div class="text p-4">
-								<span class="days">7 Days Tour</span>
-								<h3><a href="#">Banaue Rice Terraces</a></h3>
-								<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
-								<ul>
-									<li><span class="flaticon-shower"></span>2</li>
-									<li><span class="flaticon-king-size"></span>3</li>
-									<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
-			<div class="overlay"></div>
-			<div class="container py-md-5">
-				<div class="row py-md-5">
-					<div class="col-md d-flex align-items-center justify-content-center">
-						<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
-							<span class="fa fa-play"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Packages
+          </h6>
+          <h1 class="mb-5">Awesome Packages</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/package-1.jpg" alt="" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                  >Thailand</small
+                >
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                  days</small
+                >
+                <small class="flex-fill text-center py-2"
+                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                >
+              </div>
+              <div class="text-center p-4">
+                <h3 class="mb-0">$149.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                  diam amet diam eos
+                </p>
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3 border-end"
+                    style="border-radius: 30px 0 0 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/package-2.jpg" alt="" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                  >Indonesia</small
+                >
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                  days</small
+                >
+                <small class="flex-fill text-center py-2"
+                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                >
+              </div>
+              <div class="text-center p-4">
+                <h3 class="mb-0">$139.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                  diam amet diam eos
+                </p>
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3 border-end"
+                    style="border-radius: 30px 0 0 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/package-3.jpg" alt="" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                  >Malaysia</small
+                >
+                <small class="flex-fill text-center border-end py-2"
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                  days</small
+                >
+                <small class="flex-fill text-center py-2"
+                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                >
+              </div>
+              <div class="text-center p-4">
+                <h3 class="mb-0">$189.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                  diam amet diam eos
+                </p>
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3 border-end"
+                    style="border-radius: 30px 0 0 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package End -->
 
-		<section class="ftco-section ftco-about ftco-no-pt img">
-			<div class="container">
-				<div class="row d-flex">
-					<div class="col-md-12 about-intro">
-						<div class="row">
-							<div class="col-md-6 d-flex align-items-stretch">
-								<div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(images/about-1.jpg);">
-								</div>
-							</div>
-							<div class="col-md-6 pl-md-5 py-5">
-								<div class="row justify-content-start pb-3">
-									<div class="col-md-12 heading-section ftco-animate">
-										<span class="subheading">About Us</span>
-										<h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-										<p><a href="#" class="btn btn-primary">Book Your Destination</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="booking p-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-md-6 text-white">
+              <h6 class="text-white text-uppercase">Booking</h6>
+              <h1 class="text-white mb-4">Online Booking</h1>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <a class="btn btn-outline-light py-3 px-5 mt-2" href=""
+                >Read More</a
+              >
+            </div>
+            <div class="col-md-6">
+              <h1 class="text-white mb-4">Book A Tour</h1>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-transparent"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control bg-transparent"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="form-floating date"
+                      id="date3"
+                      data-target-input="nearest"
+                    >
+                      <input
+                        type="text"
+                        class="form-control bg-transparent datetimepicker-input"
+                        id="datetime"
+                        placeholder="Date & Time"
+                        data-target="#date3"
+                        data-toggle="datetimepicker"
+                      />
+                      <label for="datetime">Date & Time</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select bg-transparent" id="select1">
+                        <option value="1">Destination 1</option>
+                        <option value="2">Destination 2</option>
+                        <option value="3">Destination 3</option>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control bg-transparent"
+                        placeholder="Special Request"
+                        id="message"
+                        style="height: 100px"
+                      ></textarea>
+                      <label for="message">Special Request</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      class="btn btn-outline-light w-100 py-3"
+                      type="submit"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Booking Start -->
 
-		<section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_1.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-						<span class="subheading">Testimonial</span>
-						<h2 class="mb-4">Tourist Feedback</h2>
-					</div>
-				</div>
-				<div class="row ftco-animate">
-					<div class="col-md-12">
-						<div class="carousel-testimony owl-carousel">
-							<div class="item">
-								<div class="testimony-wrap py-4">
-									<div class="text">
-										<p class="star">
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</p>
-										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-										<div class="d-flex align-items-center">
-											<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-											<div class="pl-3">
-												<p class="name">Roger Scott</p>
-												<span class="position">Marketing Manager</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4">
-									<div class="text">
-										<p class="star">
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</p>
-										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-										<div class="d-flex align-items-center">
-											<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-											<div class="pl-3">
-												<p class="name">Roger Scott</p>
-												<span class="position">Marketing Manager</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4">
-									<div class="text">
-										<p class="star">
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</p>
-										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-										<div class="d-flex align-items-center">
-											<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-											<div class="pl-3">
-												<p class="name">Roger Scott</p>
-												<span class="position">Marketing Manager</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4">
-									<div class="text">
-										<p class="star">
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</p>
-										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-										<div class="d-flex align-items-center">
-											<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-											<div class="pl-3">
-												<p class="name">Roger Scott</p>
-												<span class="position">Marketing Manager</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4">
-									<div class="text">
-										<p class="star">
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</p>
-										<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-										<div class="d-flex align-items-center">
-											<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-											<div class="pl-3">
-												<p class="name">Roger Scott</p>
-												<span class="position">Marketing Manager</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Process
+          </h6>
+          <h1 class="mb-5">3 Easy Steps</h1>
+        </div>
+        <div class="row gy-5 gx-4 justify-content-center">
+          <div
+            class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                style="width: 100px; height: 100px"
+              >
+                <i class="fa fa-globe fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Choose A Destination</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                style="width: 100px; height: 100px"
+              >
+                <i class="fa fa-dollar-sign fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Pay Online</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                style="width: 100px; height: 100px"
+              >
+                <i class="fa fa-plane fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Fly Today</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process Start -->
 
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Travel Guide
+          </h6>
+          <h1 class="mb-5">Meet Our Guide</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-1.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -19px"
+              >
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-2.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -19px"
+              >
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-3.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -19px"
+              >
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-4.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -19px"
+              >
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square mx-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
 
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Our Blog</span>
-						<h2 class="mb-4">Recent Post</h2>
-					</div>
-				</div>
-				<div class="row d-flex">
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry justify-content-end">
-							<a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-							</a>
-							<div class="text">
-								<div class="d-flex align-items-center mb-4 topp">
-									<div class="one">
-										<span class="day">11</span>
-									</div>
-									<div class="two">
-										<span class="yr">2020</span>
-										<span class="mos">September</span>
-									</div>
-								</div>
-								<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry justify-content-end">
-							<a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-							</a>
-							<div class="text">
-								<div class="d-flex align-items-center mb-4 topp">
-									<div class="one">
-										<span class="day">11</span>
-									</div>
-									<div class="two">
-										<span class="yr">2020</span>
-										<span class="mos">September</span>
-									</div>
-								</div>
-								<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry">
-							<a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-							</a>
-							<div class="text">
-								<div class="d-flex align-items-center mb-4 topp">
-									<div class="one">
-										<span class="day">11</span>
-									</div>
-									<div class="two">
-										<span class="yr">2020</span>
-										<span class="mos">September</span>
-									</div>
-								</div>
-								<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Testimonial
+          </h6>
+          <h1 class="mb-5">Our Clients Say!!!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              src="img/testimonial-1.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              src="img/testimonial-2.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mt-2 mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              src="img/testimonial-3.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mt-2 mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              src="img/testimonial-4.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mt-2 mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
 
-		<section class="ftco-intro ftco-section ftco-no-pt">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-12 text-center">
-						<div class="img"  style="background-image: url(images/bg_2.jpg);">
-							<div class="overlay"></div>
-							<h2>We Are Pacific A Travel Agency</h2>
-							<p>We can manage your dream building A small river named Duden flows by their place</p>
-							<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">FAQs & Help</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+              Right Reserved.
 
-		<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md pt-5">
-						<div class="ftco-footer-widget pt-md-5 mb-4">
-							<h2 class="ftco-heading-2">About</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-								<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-								<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-								<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md pt-5 border-left">
-						<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-							<h2 class="ftco-heading-2">Infromation</h2>
-							<ul class="list-unstyled">
-								<li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-								<li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-								<li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-								<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-								<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-								<li><a href="#" class="py-2 d-block">Call Us</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md pt-5 border-left">
-						<div class="ftco-footer-widget pt-md-5 mb-4">
-							<h2 class="ftco-heading-2">Experience</h2>
-							<ul class="list-unstyled">
-								<li><a href="#" class="py-2 d-block">Adventure</a></li>
-								<li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
-								<li><a href="#" class="py-2 d-block">Beach</a></li>
-								<li><a href="#" class="py-2 d-block">Nature</a></li>
-								<li><a href="#" class="py-2 d-block">Camping</a></li>
-								<li><a href="#" class="py-2 d-block">Party</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md pt-5 border-left">
-						<div class="ftco-footer-widget pt-md-5 mb-4">
-							<h2 class="ftco-heading-2">Have a Questions?</h2>
-							<div class="block-23 mb-3">
-								<ul>
-									<li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-									<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-									<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a class="border-bottom" href="https://htmlcodex.com"
+                >HTML Codex</a
+              >
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
 
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						</div>
-					</div>
-				</div>
-			</footer>
-			
-			
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
-			<!-- loader -->
-			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
-			<script src="assets/js/popper.min.js"></script>
-			<script src="assets/js/bootstrap.min.js"></script>
-			<script src="assets/js/jquery.easing.1.3.js"></script>
-			<script src="assets/js/jquery.waypoints.min.js"></script>
-			<script src="assets/js/jquery.stellar.min.js"></script>
-			<script src="assets/js/owl.carousel.min.js"></script>
-			<script src="assets/js/jquery.magnific-popup.min.js"></script>
-			<script src="assets/js/jquery.animateNumber.min.js"></script>
-			<script src="assets/js/bootstrap-datepicker.js"></script>
-			<script src="assets/js/scrollax.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-			<script src="assets/js/google-map.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-		</body>
-		</html>
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

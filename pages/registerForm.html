@@ -6,7 +6,9 @@
     <title>Next Travel Pvt Ltd</title>
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="../assets/css/loginandregister.css" />
+    <link rel="stylesheet" href="../assets/css/registerStyle.css" />
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
 
     <!-- Icon -->
     <link
@@ -14,60 +16,222 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="wrapper">
-      <form id="registerForm">
-        <h1>Register</h1>
-        <div class="profileIMG-wrapper">
-          <img src="../assets/images/user.png" alt="profile Image" id="photo" />
-          <input type="file" id="adminIMG" />
-          <label for="adminIMG" id="uploadbtn"
-            ><i class="bx bxs-camera"></i
-          ></label>
-        </div>
-        <div class="input-box">
-          <input
-            type="text"
-            name="adminName"
-            id="adminName"
-            placeholder="User Name"
-            required
-          />
-          <i class="bx bxs-user"></i>
-        </div>
-        <div class="input-box">
-          <input
-            type="email"
-            name="adminEmail"
-            id="adminEmail"
-            placeholder="Email"
-            required
-          />
-          <i class="bx bxs-envelope"></i>
-        </div>
-        <div class="input-box">
-          <input
-            type="password"
-            name="adminPassword"
-            id="adminPassword"
-            placeholder="Password"
-            required
-          />
-          <i class="bx bxs-lock-alt"></i>
-        </div>
+  <body style="background: url('../assets/images/bg_2.jpg') no-repeat">
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div
+              class="card shadow-2-strong card-registration"
+              style="border-radius: 15px"
+            >
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="username"
+                          class="form-control form-control-lg"
+                          placeholder="User Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="address"
+                          class="form-control form-control-lg"
+                          placeholder="Address"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-        <button type="button" class="login-btn" id="saveAdminBtn">
-          Register
-        </button>
+                  <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100">
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control form-control-lg"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline datepicker w-100">
+                        <input
+                          type="text"
+                          id="nicNo"
+                          class="form-control form-control-lg"
+                          placeholder="NIC/ Passport Number"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-        <div class="register-link">
-          <p>
-            Already you have an account? <a href="../index.html">Sign in</a>
-          </p>
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input
+                          type="tel"
+                          id="phoneNumber"
+                          class="form-control form-control-lg"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <h6 class="mb-2 pb-1">Gender:</h6>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="femaleGender"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="femaleGender"
+                          >Female</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="maleGender"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="maleGender"
+                          >Male</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="otherGender"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="otherGender"
+                          >Other</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100">
+                        <input
+                          type="text"
+                          id="age"
+                          class="form-control form-control-lg"
+                          placeholder="Age"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline datepicker w-100">
+                        <input
+                          type="text"
+                          id="remark"
+                          class="form-control form-control-lg"
+                          placeholder="Remark"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control form-control-lg"
+                          placeholder="Password"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-evenly">
+                    <div class="col-md-2">
+                      <label for="input-file1" id="drop-area">
+                        <input
+                          type="file"
+                          accept="images/*"
+                          id="input-file1"
+                          class="input"
+                          hidden
+                        />
+                        <div id="img-view1" class="view">
+                          <img src="../assets/images/imgUpload-icon.png" />
+                          <p>Click here to upload Profile image</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="input-file2" id="drop-area">
+                        <input
+                          type="file"
+                          accept="images/*"
+                          id="input-file2"
+                          class="input"
+                          hidden
+                        />
+                        <div id="img-view2" class="view">
+                          <img src="../assets/images/imgUpload-icon.png" />
+                          <p>Click here to upload NIC/ Passport Front image</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="input-file3" id="drop-area">
+                        <input
+                          type="file"
+                          accept="images/*"
+                          id="input-file3"
+                          class="input"
+                          hidden
+                        />
+                        <div id="img-view3" class="view">
+                          <img src="../assets/images/imgUpload-icon.png" />
+                          <p>Click here to upload NIC/ Passport back image</p>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2 d-grid justify-content-center">
+                    <input
+                      class="btn btn-primary btn-lg"
+                      type="submit"
+                      value="Submit"
+                    />
+                    <p class="mt-4">
+                      Already you have an account?
+                      <a href="../pages/login.html">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </section>
 
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/JQuery/jquery-3.6.4.min.js"></script>
     <script src="../assets/js/adminRegister.js"></script>
   </body>

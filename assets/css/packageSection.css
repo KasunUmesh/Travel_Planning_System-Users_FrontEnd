@@ -1,9 +1,18 @@
 
+
+.package {
+  border: 1px solid blue;
+  bottom: 80px;
+  position: relative;
+  
+}
+
 .package nav > .nav.nav-tabs{
 
   border: none;
     color:#fff;
-    background:#272e38;
+    font-weight: 500;
+    background:#085454;
     border-radius:0;
 
 }
@@ -13,7 +22,7 @@
   border: none;
     padding: 18px 25px;
     color:#fff;
-    background:#272e38;
+    background:#085454;
     border-radius:0;
 }
 
@@ -24,14 +33,14 @@
   bottom: -60px;
   left: -10%;
   border: 15px solid transparent;
-  border-top-color: #e74c3c ;
+  border-top-color: #001542 ;
 }
 .package .tab-content{
   background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
-    border-top:5px solid #e74c3c;
-    border-bottom:5px solid #e74c3c;
+    border-top:5px solid #001542;
+    border-bottom:5px solid #001542;
     padding:30px 25px;
 }
 
@@ -39,7 +48,7 @@
 .package nav > div a.nav-item.nav-link:focus
 {
   border: none;
-    background: #e74c3c;
+    background: #001542;
     color:#fff;
     border-radius:0;
     transition:background 0.20s linear;

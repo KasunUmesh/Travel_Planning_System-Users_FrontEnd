@@ -302,7 +302,7 @@ function loadAllVehicle() {
                                 <div class="d-flex flex-column mt-4">
                                   
                                   <button class="btn btn-outline-primary btn-sm mt-2" type="button">
-                                    Select Hotel
+                                    Select Vehicle
                                   </button>
                                 </div>
                               </div>

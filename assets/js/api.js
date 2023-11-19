@@ -1,8 +1,10 @@
 var hotelbaseUrl = "http://localhost:8086/travelPlanning/hotel";
 var vehiclebaseUrl = "http://localhost:8084/travelPlanning/vehicle";
+var guidebaseUrl = "http://localhost:8087/travelPlanning/guide";
 
 loadAllHotel();
 loadAllVehicle();
+loadAllGuide();
 
 function loadAllHotel() {
   $.ajax({
@@ -315,6 +317,149 @@ function loadAllVehicle() {
         `;
 
         $(".vehicleCard").append(vehicleProduct);
+      }
+    },
+    error: function (ob) {
+      alert(ob.responseJSON.message);
+    },
+  });
+}
+
+// Guide Card Load ----------------------------------------------
+
+function loadAllGuide() {
+  $.ajax({
+    url: guidebaseUrl,
+    processData: false,
+    contentType: false,
+    cache: false,
+    method: "GET",
+    success: function (res) {
+      for (const guide of res.data) {
+        let guideCard = `
+
+        <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10 ">
+                        <div class="card shadow-lg border rounded-3 ">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                              
+                              
+                                <div id="carouselExampleIndicators" class="carousel slide">
+                                  <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    
+                                  </div>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="data:guideImg/png;base64,${guide.guideImg}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="data:guideImg/png;base64,${guide.nicFImg}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="data:guideImg/png;base64,${guide.nicBImg}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="data:guideImg/png;base64,${guide.guideIDFImg}" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="data:guideImg/png;base64,${guide.guideIDBImg}" class="d-block w-100" alt="...">
+                                    </div>
+                                   
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+
+                              
+                              </div>
+                              <div class="col-md-6 col-lg-6 col-xl-6">
+                                <h5>${guide.guideName}</h5>
+                                
+
+                                <div class="container text-start small">
+                                  <div class="row">
+
+                                    <div class="col-6 p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Expirience :</span>
+                                      <span >${guide.experience}</span>
+                                    </div>
+
+                                    <div class="col-4 p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Gender :</span>
+                                      <span >${guide.gender}</span>
+                                    </div>
+
+                                    <div class="col-6  p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Address :</span>
+                                      <span >${guide.address}</span>
+                                    </div>
+
+                                    <div class="col-5 p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Age :</span>
+                                      <span >${guide.age}</span>
+                                    </div>
+
+                                    <div class="col-6 p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Contact :</span>
+                                      <span >${guide.contact}</span>
+                                    </div>
+
+                                    <div class="col-6 p-0 ">
+                                      <span class="text-primary"> • </span>
+                                      <span >Man Day Value :</span>
+                                      <span >${guide.man_day_value}</span>
+                                    </div>
+
+                                  
+                                    
+                                  </div>
+                                </div>
+                                
+                              
+                               
+                              </div>
+                              <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                <div class="d-flex flex-row align-items-center mb-1">
+                                  
+                                  <h4 class="mb-1 me-1">Rs </h4>
+                                  <h4 class="mb-1 me-1">${guide.man_day_value}</h4>
+                                  
+                                </div>
+                                
+                                <div class="d-flex flex-column mt-4">
+                                  
+                                  <button class="btn btn-outline-primary btn-sm mt-2" type="button">
+                                    Select Guide
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+        `;
+
+        $(".guideCard").append(guideCard);
       }
     },
     error: function (ob) {

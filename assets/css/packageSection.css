@@ -53,3 +53,43 @@
     border-radius:0;
     transition:background 0.20s linear;
 }
+
+/* Image upload */
+
+#drop-area {
+  width: 390px;
+  height: 240px;
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.view{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px dashed #bbb5ff;
+  background: #f7f8ff;
+  background-position: center;
+  background-size: cover;
+}
+
+.view img {
+  width: 60px;
+  margin-top: 65px;
+}
+
+.view p {
+  font-size: 20px;
+}
+
+.tableImgSize {
+  width: 100px;
+}
+
+.table-container {
+  
+  width: 85%;
+  overflow-x: scroll;
+}

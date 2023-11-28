@@ -1,3 +1,18 @@
+// Image input element
+
+// const dropArea = document.querySelector("#drop-area");
+const inputFile1 = document.querySelector("#input-file1");
+const imageView1 = document.querySelector("#img-view1");
+
+inputFile1.addEventListener("change", function () {
+  let imgLink = URL.createObjectURL(inputFile1.files[0]);
+  imageView1.style.backgroundImage = `url(${imgLink})`;
+  imageView1.textContent = "";
+  imageView1.style.border = 0;
+});
+
+// ---------------------------------------------------------------------------------------------------------
+
 var hotelbaseUrl = "http://localhost:8086/travelPlanning/hotel";
 var vehiclebaseUrl = "http://localhost:8084/travelPlanning/vehicle";
 var guidebaseUrl = "http://localhost:8087/travelPlanning/guide";

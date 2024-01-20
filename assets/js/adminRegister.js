@@ -32,24 +32,42 @@ inputFile3.addEventListener("change", function () {
 
 // Frontend and backend functions
 
-var baseUrl = "";
+var baseUrl = "http://localhost:8085/travelPlanning/user/save";
 
-$("#saveAdminBtn").click(function () {
-  saveAdmin();
+$("#saveUserBtn").click(function () {
+  saveUser();
 });
 
-function saveAdmin() {
+function saveUser() {
   const formData = new FormData();
 
-  const name = $("#adminName").val();
-  const email = $("#adminEmail").val();
-  const password = $("#adminPassword").val();
-  const image = $("#adminIMG")[0].files[0];
+  const UserName = $("#username").val();
+  const address = $("#address").val();
+  const email = $("#email").val();
+  const nicNo = $("#nicNo").val();
+  const phone = $("#phoneNumber").val();
+  const gender = $("#gender").val();
+  const age = $("#age").val();
+  const remark = $("#remark").val();
+  const password = $("#password").val();
+  const profileIMG = $("#input-file1")[0].files[0];
+  const nicFIMG = $("#input-file1")[0].files[0];
+  const nicBIMG = $("#input-file1")[0].files[0];
 
-  formData.append("adminName", name);
-  formData.append("adminEmail", email);
-  formData.append("adminPassword", password);
-  formData.append("adminIMG", image);
+  formData.append("userName", UserName);
+  formData.append("address", address);
+  formData.append("email", email);
+  formData.append("nicNo", nicNo);
+  formData.append("phone", phone);
+  formData.append("gender", gender);
+  formData.append("age", age);
+  formData.append("remark", remark);
+  formData.append("password", password);
+  formData.append("profileImg", profileIMG);
+  formData.append("nicFImg", nicFIMG);
+  formData.append("nicBImg", nicBIMG);
+
+  console.log(formData);
 
   $.ajax({
     url: baseUrl,

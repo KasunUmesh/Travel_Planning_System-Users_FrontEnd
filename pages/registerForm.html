@@ -86,47 +86,15 @@
                       </div>
                     </div>
                     <div class="col-md-6 mb-4 pb-2">
-                      <h6 class="mb-2 pb-1">Gender:</h6>
-
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="femaleGender"
-                          value="option1"
-                          checked
-                        />
-                        <label class="form-check-label" for="femaleGender"
-                          >Female</label
-                        >
-                      </div>
-
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="maleGender"
-                          value="option2"
-                        />
-                        <label class="form-check-label" for="maleGender"
-                          >Male</label
-                        >
-                      </div>
-
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="otherGender"
-                          value="option3"
-                        />
-                        <label class="form-check-label" for="otherGender"
-                          >Other</label
-                        >
-                      </div>
+                      <select
+                        class="form-select form-select-lg"
+                        aria-label="Default select example"
+                        id="gender"
+                      >
+                        <option selected>Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
                     </div>
                   </div>
 
@@ -213,11 +181,13 @@
                   </div>
 
                   <div class="mt-4 pt-2 d-grid justify-content-center">
-                    <input
+                    <button
+                      type="button"
                       class="btn btn-primary btn-lg"
-                      type="submit"
-                      value="Submit"
-                    />
+                      id="saveUserBtn"
+                    >
+                      Submit
+                    </button>
                     <p class="mt-4">
                       Already you have an account?
                       <a href="../pages/login.html">Sign in</a>
